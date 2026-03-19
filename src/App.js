@@ -49,7 +49,7 @@ function App() {
         <main>
           <div className="weather-container">
             <div>
-              <h1 className="weather-app-city"></h1>
+              <h1 className="weather-app-city">London</h1>
               <p className="weather-app-details">
                 <span id="time"></span> <span id="description"></span>
                 <br />
