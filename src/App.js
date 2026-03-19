@@ -1,16 +1,45 @@
+import axios from "axios";
 import "./App.css";
+import { useState } from "react";
 
 function App() {
+  let [city, setCity] = useState("");
+  let [loaded, setLoaded] = useState(false);
+  let [weather, setWeather] = useState({});
+
+  function displayForecastWeatherResult(response) {
+    setLoaded(true);
+    setWeather({
+      temperature: response.data.temperature.current,
+      description: response.data.condition.description,
+      humidity: response.data.temperature.humidity,
+      wind: response.data.wind.speed,
+    });
+  }
+
+  function displayWeather(event) {
+    event.preventDefault();
+
+    let apiKey = "bf602aabco34t729377499af62121a7a";
+    let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+
+    axios.get(apiUrl).then(displayForecastWeatherResult);
+  }
+
+  function handleSearch(event) {
+    setCity(event.target.value);
+  }
   return (
     <div className="App">
       <div className="container">
         <header>
-          <form className="search-form">
+          <form className="search-form" onSubmit={displayWeather}>
             <input
               type="search"
               placeholder="Enter a city...."
               required
               className="search-input"
+              onChange={handleSearch}
             />
             <button type="submit" className="search-button">
               Search
@@ -34,7 +63,13 @@ function App() {
               <div className="weather-app-temp-unit">°C</div>
             </div>
           </div>
-          <div className="weather-forecast"></div>
+          <div className="weather-forecast">
+            <span>Fri</span>
+            <span>Sat</span>
+            <span>Sun</span>
+            <span>Mon</span>
+            <span>Tue</span>
+          </div>
         </main>
         <footer>
           Coded by
