@@ -22,6 +22,13 @@ h3 {
   border-bottom: 1px solid #f9f7fe;
   padding: 0 0 30px 0;
 }
+.App .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 5px;
+}
 .App a {
   color: #885df1;
 }
