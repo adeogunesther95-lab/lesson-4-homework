@@ -5,7 +5,7 @@ import Weather from "./Weather";
 // Put any other imports below so that CSS from your
 // components takes precedence over default styles.
 
-export default function App() {
+export default function App(props) {
   return (
     <div className="App">
       <div className="container">
