@@ -10,7 +10,18 @@ export default function App() {
     <div className="App">
       <div className="container">
         <header className="App-header">
-          <img src="/img/ea-logo.png" alt="ea-logo" className="ea-logo" />
+          <a
+            href="https://www.linkedin.com/in/esther-adeogun-0b9118125/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="/img/ea-logo.png"
+              alt="ea-logo"
+              className="ea-logo mt-0"
+              width={40}
+            />
+          </a>
         </header>
         <Weather />
         <footer className="App-footer">

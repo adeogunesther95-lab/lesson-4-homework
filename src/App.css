@@ -2,14 +2,10 @@
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
-  background-color: #f9f7fe;
+  background-color: #c4cdd2;
   color: #333;
 }
-.App h1,
-h2,
-h3 {
-  color: #4a148c;
-}
+
 .App {
   max-width: 600px;
   margin: 45px auto;
@@ -18,102 +14,12 @@ h3 {
   border-radius: 16px;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
 }
-.App header {
-  border-bottom: 1px solid #f9f7fe;
-  padding: 0 0 30px 0;
-}
-.App .icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 5px;
-  height: 5px;
-}
 .App a {
-  color: #885df1;
-}
-.App .search-input {
-  background-color: #f9f7fe;
-  border: none;
-  border-radius: 6px;
-  width: 80%;
-  font-size: 16px;
-  padding: 15px 20px;
-}
-.App .search-button {
-  background: #885df1;
-  padding: 15px 30px;
-  border: none;
-  font-size: 16px;
-  margin-left: 5px;
-  border-radius: 6px;
-  color: white;
-  cursor: pointer;
-}
-.App .weather-container {
-  display: flex;
-  justify-content: space-between;
-}
-.App main {
-  padding: 30px 0;
-}
-.App .weather-app-city {
-  margin: 0;
-  font-size: 38px;
-  line-height: 48px;
-}
-.App .weather-app-details {
-  font-size: 16px;
-  line-height: 20px;
-  color: rgba(39, 33, 66, 0.4);
-}
-.App .weather-app-details strong {
-  color: #f65282;
-}
-.App .weather-app-temp {
-  display: flex;
-}
-.App .weather-app-icon {
-  width: 88px;
-  height: 88px;
-}
-.App .weather-app-temp-value {
-  font-size: 88px;
-  line-height: 88px;
-  font-weight: bold;
-}
-.App .weather-app-temp-unit {
-  font-size: 28px;
-  margin-top: 6px;
+  color: #90a251;
 }
 
-.App .weather-forecast {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 30px;
-}
-.App .weather-forecast-date {
-  text-align: center;
-  font-size: 16px;
-  color: rgba(39, 33, 66, 0.4);
-  line-height: 20px;
-  margin-bottom: 10px;
-}
-.App .weather-forecast-icon {
-  width: 88px;
-  height: 88px;
-  display: block;
-  margin: 0 auto;
-}
-.App .weather-forecast-temperatures {
-  text-align: center;
-  color: #f65282;
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-}
-.App .weather-forecast-temperature {
-  padding: 0 10px;
+.App main {
+  padding: 30px 0;
 }
 .App footer {
   border-top: 1px solid #f9f7fe;
