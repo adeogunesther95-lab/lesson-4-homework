@@ -1,8 +1,5 @@
 .weather-info {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .weather-info h1 {
   font-size: 38px;

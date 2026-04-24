@@ -28,6 +28,7 @@ export default function WeatherIcon(props) {
     <div className="weather-icon">
       <WeatherSvg
         state={codeMapping[props.code]}
+        night={props.code?.endsWith("n")}
         width={props.width}
         height={props.height}
       />
