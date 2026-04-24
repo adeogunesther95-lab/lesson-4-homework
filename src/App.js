@@ -23,7 +23,7 @@ export default function App(props) {
             />
           </a>
         </header>
-        <Weather />
+        <Weather defaultCity="Lagos" />
         <footer className="App-footer">
           Coded by{" "}
           <a
