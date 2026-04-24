@@ -13,7 +13,11 @@ export default function WeatherInfo(props) {
           <ul>
             <li>
               <span className="city-search-day">
-                <FormattedDate date={props.data.date} /> {""}
+                <FormattedDate
+                  date={props.data.date}
+                  timezone={props.data.timezone}
+                />{" "}
+                {""}
               </span>
 
               <span className="weather-condition">

@@ -8,7 +8,7 @@
 
 /* Weather Forecast Styles */
 .weather-forecast {
-  margin-top: 50px !important;
+  margin-top: 60px !important;
 }
 
 .weather-forecast-day {
@@ -25,12 +25,7 @@
   display: flex;
   justify-content: center;
   margin: 15px 0;
-}
-
-.weather-icon {
-  width: 40px;
-  height: 40px;
-  display: block;
+  align-items: center;
 }
 
 .temperature-container {

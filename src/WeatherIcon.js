@@ -1,35 +1,34 @@
 import React from "react";
-import "./WeatherInfo.css";
-import { WeatherSvg } from "weather-icons-animated";
+import ReactAnimatedWeather from "react-animated-weather";
 
 export default function WeatherIcon(props) {
   const codeMapping = {
-    "01d": "sunny",
-    "01n": "clear-night",
-    "02d": "partlycloudy",
-    "02n": "partlycloudy",
-    "03d": "cloudy",
-    "03n": "cloudy",
-    "04d": "cloudy",
-    "04n": "cloudy",
-    "09d": "rainy",
-    "09n": "rainy",
-    "10d": "rainy",
-    "10n": "rainy",
-    "11d": "lightning-rainy",
-    "11n": "lightning-rainy",
-    "13d": "snowy",
-    "13n": "snowy",
-    "50d": "fog",
-    "50n": "fog",
+    "01d": "CLEAR_DAY",
+    "01n": "CLEAR_NIGHT",
+    "02d": "PARTLY_CLOUDY_DAY",
+    "02n": "PARTLY_CLOUDY_NIGHT",
+    "03d": "CLOUDY",
+    "03n": "CLOUDY",
+    "04d": "CLOUDY",
+    "04n": "CLOUDY",
+    "09d": "RAIN",
+    "09n": "RAIN",
+    "10d": "RAIN",
+    "10n": "RAIN",
+    "11d": "THUNDERSTORM",
+    "11n": "THUNDERSTORM",
+    "13d": "SNOW",
+    "13n": "SNOW",
+    "50d": "FOG",
+    "50n": "FOG",
   };
 
   return (
-    <div className="weather-icon">
-      <WeatherSvg
-        state={codeMapping[props.code] || "sunny"}
-        night={props.code?.endsWith("n")}
-      />
-    </div>
+    <ReactAnimatedWeather
+      icon={codeMapping[props.code] || "CLEAR_DAY"}
+      color="white"
+      size={props.width || 60}
+      animate={true}
+    />
   );
 }
