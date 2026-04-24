@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 
 export default function FormattedDate(props) {
   // Calculate local time for the city using timezone offset
