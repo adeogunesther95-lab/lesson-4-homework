@@ -2,6 +2,7 @@ import React from "react";
 import "./Weather.css";
 import "./WeatherInfo.css";
 import WeatherIcon from "./WeatherIcon";
+import FormattedDate from "./FormattedDate";
 
 export default function WeatherInfo(props) {
   return (
@@ -11,8 +12,10 @@ export default function WeatherInfo(props) {
           <h1 className="city-search-placeholder">{props.data.city}</h1>
           <ul>
             <li>
-              <span className="city-search-day">Wednesday {""}</span>
-              <span className="time-of-search">05:24, {""}</span>
+              <span className="city-search-day">
+                <FormattedDate date={props.data.date} /> {""}
+              </span>
+
               <span className="weather-condition">
                 {props.data.description}
               </span>

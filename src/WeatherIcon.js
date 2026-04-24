@@ -1,6 +1,6 @@
 import React from "react";
-import { WeatherSvg } from "weather-icons-animated";
 import "./WeatherInfo.css";
+import { WeatherSvg } from "weather-icons-animated";
 
 export default function WeatherIcon(props) {
   const codeMapping = {
@@ -27,10 +27,8 @@ export default function WeatherIcon(props) {
   return (
     <div className="weather-icon">
       <WeatherSvg
-        state={codeMapping[props.code]}
+        state={codeMapping[props.code] || "sunny"}
         night={props.code?.endsWith("n")}
-        width={props.width}
-        height={props.height}
       />
     </div>
   );

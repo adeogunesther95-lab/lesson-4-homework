@@ -36,5 +36,26 @@
 .weather-info .temperature-units {
   font-size: 30px;
   font-weight: normal;
+  margin-left: 0.25rem;
   line-height: 1;
+}
+
+.weather-info .weather-icon svg {
+  width: 60px;
+  height: 55px;
+}
+
+@media (max-width: 576px) {
+  .weather-info .temperature-value {
+    font-size: 60px;
+  }
+
+  .weather-info .temperature-units {
+    font-size: 24px;
+  }
+
+  .weather-info .weather-icon svg {
+    width: 40px;
+    height: 40px;
+  }
 }
